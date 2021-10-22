@@ -25,6 +25,7 @@ public class Product {
 	@Column(name="product_price")
 	private double price;
 	
+	
 	public Product(long id, String name, String description, double price) {
 		super();
 		this.id = id;
@@ -32,7 +33,10 @@ public class Product {
 		this.description = description;
 		this.price = price;
 	}
+	
+	
 	public Product() {}
+	
 	public long getId() {
 		return id;
 	}
